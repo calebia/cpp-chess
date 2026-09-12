@@ -12,13 +12,13 @@ enum class PieceType{
     King,
     Queen, 
     Pawn, 
-    Horse,
+    Knight,
     Rook
 };
 
 struct Piece{
+    PieceType type;
     Color color;
-    PieceType pieceType;
 };
 
 using Cell = std::optional<Piece>;
