@@ -1,0 +1,3 @@
+C:/Users/caleb/Documents/Nova pasta/build/CMakeFiles/chess.dir
+C:/Users/caleb/Documents/Nova pasta/build/CMakeFiles/edit_cache.dir
+C:/Users/caleb/Documents/Nova pasta/build/CMakeFiles/rebuild_cache.dir

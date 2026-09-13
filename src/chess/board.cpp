@@ -1,4 +1,5 @@
 #include "board.hpp"
+
 #include <iostream>
 
 namespace chess {
@@ -72,6 +73,12 @@ namespace chess {
 
             std::cout << "\n";
         }
+    }
+
+    void Board::move(const Move& move){
+        cells_[move.to.row][move.to.col] = cells_[move.from.row][move.from.col];
+
+        cells_[move.from.row][move.from.col].reset();
     }
 
 }

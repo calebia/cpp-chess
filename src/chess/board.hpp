@@ -4,6 +4,7 @@
 #include <optional>
 
 #include "piece.hpp"
+#include "move.hpp"
 
 namespace chess{
 
@@ -13,6 +14,7 @@ namespace chess{
         public:
             Board();
             void print() const;
+            void move(const Move& move);
 
         private:
             std::array<std::array<Cell,8>,8> cells_;
