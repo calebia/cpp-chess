@@ -76,9 +76,13 @@ namespace chess {
     }
 
     void Board::move(const Move& move){
-        cells_[move.to.row][move.to.col] = cells_[move.from.row][move.from.col];
+        cells_[move.to.row()][move.to.col()] = cells_[move.from.row()][move.from.col()];
 
-        cells_[move.from.row][move.from.col].reset();
+        cells_[move.from.row()][move.from.col()].reset();
+    }
+
+    const Cell& Board::at(const Square& square) const{
+        return cells_[square.row()][square.col()];
     }
 
 }

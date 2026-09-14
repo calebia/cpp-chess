@@ -15,6 +15,7 @@ namespace chess{
             Board();
             void print() const;
             void move(const Move& move);
+            const Cell& at(const Square& square) const;
 
         private:
             std::array<std::array<Cell,8>,8> cells_;
